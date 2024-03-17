@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 1005;
+    height: 100vh;
+    overflow: hidden;
+    background: #6D4F34;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(Neue\ Montreal\ Medium\ 500.otf);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-item {
+    padding: 2em;
+    font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.centerbar {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.centerbar-item:nth-child(1) {
+    background: #541A01;
+    font-family: "Carbon Bold";
+    text-transform: uppercase;
+    width: 240px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D44D13;
+    position: relative;
+    left: -100px;
+}
+
+.centerbar-item:nth-child(2) {
+    transform: rotate(-90deg);
+    position: relative;
+    top: -130px;
+    left: 100px;
+    font-family: "Neue Montreal";
+    text-transform: uppercase;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottombar-item {
+    padding: 2em;
+    font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.year {
+    font-style: italic;
+}
+
+.mail {
+    text-decoration: underline;
+}
+
+.header {
+    position: absolute;
+    right: -10px;
+    bottom: -210px;
+    z-index: 2;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-item {
+    font-family: "Neue Montreal";
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 500px;
+}
+
+.img-one {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 300px;
+    background: url(img-one.jpg) no-repeat 50% 50%; 
+    background-size: cover;
+}
+
+.img-two {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    width: 350px;
+    height: 200px;
+    background: url(img-two.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.img-three {
+    position: absolute;
+    left: 75%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 150px;
+    height: 250px;
+    background: url(img-three.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
